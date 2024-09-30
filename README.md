@@ -39,12 +39,5 @@ These small C programs are used by the trace files to test specific behaviors of
 - A UNIX-based environment (Linux/macOS).
 - The `make` utility.
 
-### Compilation:
-To compile the shell program and the helper programs:
-```bash
-make
-Once compiled, you can run the shell by executing:
-./tsh
-
 ## **License*
 This project is open-source under the MIT License. See the LICENSE file for more information.
