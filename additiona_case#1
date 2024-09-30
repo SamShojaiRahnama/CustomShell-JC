@@ -1,0 +1,21 @@
+#
+# trace19.txt - Move jobs between background and foreground
+#
+/bin/echo -e tsh\076 sleep 10 \046
+sleep 10 &
+
+/bin/echo -e tsh\076 sleep 20 \046
+sleep 20 &
+
+/bin/echo -e tsh\076 jobs
+jobs
+
+SLEEP 1
+
+/bin/echo -e tsh\076 fg \%1
+fg %1
+
+SLEEP 1
+
+/bin/echo -e tsh\076 bg \%2
+bg %2

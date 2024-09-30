@@ -1,0 +1,20 @@
+#
+# trace23.txt - Advanced error handling
+#
+/bin/echo -e tsh\076 cat \< nonexistentfile.txt
+cat < nonexistentfile.txt
+
+/bin/echo -e tsh\076 cat nonexistentfile.txt \>
+cat nonexistentfile.txt >
+
+/bin/echo -e tsh\076 cat \>
+cat >
+
+/bin/echo -e tsh\076 ./protectedscript.sh
+./protectedscript.sh
+
+/bin/echo -e tsh\076 cat \|\| ls
+cat || ls
+
+/bin/echo -e tsh\076 /bin/echo Hello World \>\/dev\/null
+/bin/echo Hello World >/dev/null
